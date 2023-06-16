@@ -1,0 +1,423 @@
+ /* Universal Style*/
+.dark-bone-background {
+    background-color: #E6DACE;
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex: 1 1 auto;
+    z-index: -1;
+ } 
+
+.light-bone-background  {
+    background-color: #F4ECE6;
+ }
+
+.white-background {
+    background-color: white;
+ }
+
+.blue-background {
+    background-color:#0050FF;
+ }
+
+body, html {
+    font-size: 16px;
+    width: 100%;
+    margin: auto;
+    font-family: Arial;   
+ }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.p-font-100 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.25rem;
+    margin: 0;
+}
+
+.p-font-25 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.56rem;
+    margin: 0;
+}
+
+.p-font-8 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.5rem;
+    margin: 0;
+}
+
+.p-font-18 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.12rem;
+    margin: 0;
+}
+
+.p-font-16 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+
+/* Nav Section*/
+header {
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    color: black;
+    height: 4rem;
+    z-index: 1;
+    background-color: white;
+    padding: 2rem;
+    
+}
+
+header .logo-desktop {
+    width: 50%;
+    font-size: 1.25rem;
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    justify-content:flex-end;
+}
+
+nav span {
+    padding: 0.5rem 0.5rem;
+    margin: 0; 
+    
+}
+
+nav span:hover {
+    cursor: pointer;
+    color: #0050FF;   
+    transition: color 0.4s ease 0s;
+
+}
+
+.name {
+    padding-right: 1rem;
+    
+}
+
+.metier {
+    padding-left: 1rem;
+}
+
+.square {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.93rem;
+}
+
+.mobile {
+    display: none;
+}
+
+.logo-mobile {
+    display:none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .desktop {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .name {
+        font-size: 1.125rem;
+    }
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav .logo-desktop {
+        padding: 0;
+    }
+    
+    .desktop {
+        display: flex;
+        flex-wrap: wrap;
+      }
+  
+}
+
+@media only screen and (max-width: 720px) {
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3.125rem;
+        
+    }
+
+    .logo-mobile span {
+        padding: 0;
+    }
+
+    body {
+        background-color: #E6DACE ;
+    }
+}
+
+/* Banner Section*/
+
+#about-me {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hello-box {
+    width: 23.43rem;
+    text-align: center;
+    margin: 2.5rem 0.625rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+
+.image-container {
+    margin: 2.68rem 0rem 2.125rem 0rem;
+}
+
+.text-container {
+    margin: 0rem 0rem 3.18rem 0rem;
+    flex-direction: column;
+}
+
+.text-container h1 {
+    margin-bottom: 0rem;
+    
+}
+
+.image-container img {
+    width: 12.81rem;
+    height: 12.81rem;
+    object-fit: cover;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px, rgba(0, 0, 0, 0.5) 0px 7px 13px -3px, rgba(0, 0, 0, 0.4) 0px -3px 0px inset;
+}
+
+.social-nav {
+    width: 23.43rem;
+    height: 3.31rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.social-nav ul {
+    width: 9.625rem;
+    height: 1.56rem;
+    list-style: none;
+    padding: 0rem;
+
+}
+
+.social-nav li {
+    display: inline-block;
+    padding-right: 0.625rem;
+
+}
+
+.rectangle {
+    width: 4.68rem;
+    height: 0.18rem;
+    margin: 1.56rem 0rem;
+}
+
+.text-box-1 {
+    width: 30.31rem;
+}
+
+.text-box-1 p {
+    padding-bottom: 1.25rem;
+}
+
+.text-box-2 {
+    width: 23.06rem;
+    line-height: 1.2;
+}
+
+.text-box-2 p {
+    padding-top: 0.18rem;
+}
+
+.ctas {
+    display: flex;   
+}
+
+
+.cta-1, .cta-2 {
+    display: flex;
+    width: 8.125rem;
+    height: 2.18rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5rem; 
+    margin: 1.25rem 0.625rem;   
+}
+
+
+.cta-2 {
+    border: 2px solid black;
+}
+
+.cta-1 {
+    color: white;
+    border: 2px solid #0050FF;
+    
+}
+
+.cta-2 a {
+    color: black;
+    
+}
+
+.cta-1:hover {
+    background-color: white;
+    border: 2px solid #0050FF;
+    color: #0050FF;
+    transition: background-color 0.4s ease 0s, border 0.4s ease 0s, color 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.cta-2:hover {
+    background-color: #0050FF;
+    border: 2px solid #0050FF;
+    color: white;
+    transition: background-color 0.4s ease 0s, border 0.4s ease 0s, color 0.4s ease 0s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    .banner {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 150px;
+    }
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+
+    .text-box-1 {
+        width: 75%;
+    }
+    
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+}
+
+/* Footer Section*/
+
+footer {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    
+    
+    
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.social-nav-footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    
+    
+}
+
+.social-nav-footer ul {
+    width: 154px;
+    height: 25px;
+    list-style: none;
+    padding: 0px;
+
+}
+
+.social-nav-footer li {
+    display: inline-block;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+
+.contact {
+    flex-direction: column;
+    margin: 10px 20px;
+    
+}
+
+.contact span a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact span {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-mobile, .tel-mobile { 
+    display: none;
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .tel, .email  {
+        display: none;
+    }
+
+    .email-mobile, .tel-mobile { 
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        
+    }
+
+    .email-mobile span, .tel-mobile span { 
+        
+        width: 50px;
+        height: 50px;
+    }
+
+}
