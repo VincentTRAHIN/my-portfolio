@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="reset.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
     <header class="page-header">
-      <div class="page-header__square"></div>
-      <h1 class="page-header__title">Vincent TRAHIN</h1>
-      <span class="page-header__subtitle">Développeur Web</span>
+      <div class="page-header__titles">
+        <div class="page-header__square"></div>
+        <h1 class="page-header__title">Vincent TRAHIN</h1>
+        <strong class="page-header__titles-type">/</strong>
+        <span class="page-header__subtitle">Développeur Web</span>
+      </div>
       <nav class="page-header__nav--desktop">
         <span href="#">À PROPOS DE MOI</span>
         <span href="#">CV</span>
@@ -27,14 +31,11 @@
         <span href="#">CONTACT</span>
       </nav>
     </header>
-    <div class="main-container__background--left"></div>
-    <div class="main-container__background--right"></div>
     <main class="main-container">
       <aside class="main-aside">
         <div class="main-aside__content">
           <img class="main-aside__picture" src="./img/img-profile.jfif" alt="Photo de profil" />
-          <h2 class="main-aside__name">Vincent TRAHIN</h2>
-          <span class="main-aside__shape"></span>
+          <h2 class="main-aside__name">Vincent <br> TRAHIN</h2>
           <span class="main-aside__subtitle">Développeur Web</span>
         </div>
         <div class="main-aside__footer">
@@ -71,12 +72,8 @@
           innovants.
         </p>
         <div class="main-article__btns">
-          <div class="main-article__btn main-article__btn--cv">
-            <div href="#">CV</div>
-          </div>
-          <div class="main-article__btn main-article__btn--cv">
-            <div href="#">PROJETS</div>
-          </div>
+          <button class="main-article__btn main-article__btn--cv" role="button">CV</button>
+          <button class="main-article__btn main-article__btn--projets" role="button">PROJETS</button>
         </div>
         <p class="main-article__presentation">
           Avant de me lancer dans le développement web, j'ai travaillé
@@ -91,7 +88,19 @@
       </article>
     </main>
     <footer class="page-footer">
-      <table class="page-footer__contacts">
+      <div class="page-footer__social">
+        <a href="#"><img class="page-footer__social-instagram" src="./img/instagram.png" alt="Logo Instagram"></a>
+        <a href="#"><img class="page-footer__social-linkedin" src="./img/linkedin.png" alt="Logo LinkedIn"></a>
+        <a href="#"><img class="page-footer__social-twitter" src="./img/twitter.png" alt="Logo Twitter"></a>
+        <a href="#"><img class="page-footer__social-telephone" src="./img/whatsapp.png" alt="Logo WhatApp"></a>
+        <a href="#"><img class="page-footer__social-mail" src="./img/github.png" alt="Logo Github"></a>
+        <a href="#"><img class="page-footer__social-mail" src="./img/gmail.png" alt="Logo Gmail"></a>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!--  <table class="page-footer__contacts">
         <thead class="page-footer__head">
           <tr class="page-footer__head-row">
             <th class="page-footer__head-item">Phone</th>
@@ -102,7 +111,7 @@
         <tbody class="page-footer__body">
           <tr class="page-footer__body-row">
             <td class="page-footer__body-item"><a href="telto:0650220707">06 50 22 07 07</a></td>
-            <td class="page-footer__body-item"><a href="mailto:vincent.trahin@gmail.com">vincent.trahin@gmail.com</a></td>>
+            <td class="page-footer__body-item"><a href="mailto:vincent.trahin@gmail.com">vincent.trahin@gmail.com</a></td>
             <td class="page-footer__body-item">
               <ul class="page-footer__body-list">
                 <li class="page-footer__body-list-item">
@@ -129,46 +138,4 @@
             </td>
           </tr>
         </tbody>
-      </table>
-    </footer>
-  </body>
-</html>
-
-<!-- <div id="contact">
-        <div class="tel contact flex">
-          <span><strong>Tel</strong></span>
-          <span></span>
-        </div>
-
-        <div class="email contact flex">
-          <span><strong>E-Mail</strong></span>
-          <span
-            ><a href="mailto:vincent.trahin@gmail.com"
-              >vincent.trahin@gmail.com</a
-            ></span
-          >
-        </div>
-
-        <div class="tel-mobile contact">
-          <span><strong>Tel</strong></span>
-          <span
-            ><a href="telto:0650220707"
-              ><img src="./img/appel-telephonique (1).png" /></a
-          ></span>
-        </div>
-
-        <div class="email-mobile contact">
-          <span><strong>Mail</strong></span>
-          <span
-            ><a href="mailto:vincent.trahin@gmail.com"
-              ><img src="./img/enveloppe.png" /></a
-          ></span>
-        </div>
-
-        <div class="contact flex">
-          <span><strong>Online</strong></span>
-          <div class="social-nav-footer">
-            
-          </div>
-        </div>
-      </div>--> 
+      </table>--> 
